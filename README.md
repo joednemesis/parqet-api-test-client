@@ -2,12 +2,11 @@
 
 A lightweight Python project designed to explore the features of the **Parqet Connect API**. This tool serves as a technical experiment (Proof-of-Concept) for implementing the secure **OAuth2 authentication process with PKCE (S256)**.
 
-## **Screenshots**
-
+## 📸 Screenshots
 *The landing page showing the Client ID and the authorization trigger.*
 ![Landing Page](screenshots/start.png)
 
-## **About the Project**
+## **🛠 Project Structure**
 
 The script automates the data retrieval process from Parqet and presents the results in a structured web dashboard. It performs a three-stage analysis:
 
@@ -15,7 +14,7 @@ The script automates the data retrieval process from Parqet and presents the res
 2. **Portfolio Overview**: Lists all connected portfolios.  
 3. **Activity Deep-Dive**: Fetches the most recent transactions from the first portfolio found.
 
-## **Background & API Reference**
+## **📖 Background & API Reference**
 
 This project is based on the official Parqet documentation. To use the API, the following steps are required in the [Parqet Developer Portal](https://developer.parqet.com):
 
@@ -26,7 +25,7 @@ This project is based on the official Parqet documentation. To use the API, the 
    * [OpenAPI Specification (JSON)](https://developer.parqet.com/api-spec/current.json)  
    * [Developer Hub Overview](https://developer.parqet.com/llms.txt)
 
-## **Installation & Setup**
+## **📦 Installation & Setup**
 
 ### **1\. Prerequisites**
 
@@ -46,7 +45,7 @@ pip install \-r requirements.txt
 Replace the CLIENT\_ID placeholder in app.py with your ID:  
 CLIENT\_ID \= "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
-## **Usage**
+## **🚦 Usage**
 
 1. Start the local server:  
    python app.py
@@ -55,7 +54,7 @@ CLIENT\_ID \= "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 3. Click on **"Authorize & Start Analysis"**.  
 4. After logging in via Parqet, the analyzed data will be displayed in the dashboard.
 
-## **Security Notes**
+## **🔒 Security Notes**
 
 * **PKCE**: The tool uses the Proof Key for Code Exchange for a secure OAuth2 flow.  
 * **Temporary  Storage**: The PKCE verifier is temporarily stored in a local file named verifier.txt. This file is used to verify the authenticity of the token request after the redirect..
