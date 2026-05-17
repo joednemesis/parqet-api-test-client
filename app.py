@@ -75,7 +75,7 @@ def login():
         'response_type': 'code',
         'client_id': CLIENT_ID,
         'redirect_uri': REDIRECT_URI,
-        'scope': 'openid profile offline_access portfolio:read',
+        'scope': 'portfolio:read',
         'audience': 'api.parqet.com',
         'state': secrets.token_urlsafe(16),
         'code_challenge': challenge,
